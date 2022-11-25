@@ -7,21 +7,32 @@
   </head>
 
   <body>
-    <h1>Hello World, we are software developers!</h1>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+        <h1 id="title">Title</h1> 
+        <p id="description">Survey</p>
+        <form id="survey-form">
+          <label for="name" id="name-label"> name</label>
+            <input  required type="text" id="name" placeholder="your name">
+          <label for="email" id="email-label"> email </label>
+            <input required type="email" id="email" placeholder="your mail">
+            <label for="number" id="number-label"> number</label>
+            <input type="number" id="number" max="100" min="20" placeholder="your age">
+            <select id="dropdown">
+              <option>option 1</option>
+              <option>option 2</option>
+            </select>
+            <div>
+              <input type="radio" name="radioOptions" value="1">option 1</input>
+              <input type="radio" name="radioOptions" value="2">option 2</input>
+            </div>
+            <div>
+              <input type="checkbox" name="radioOptions" value="a">option a</input>
+              <input type="checkbox" name="radioOptions" value="b">option b</input>
+              <input type="checkbox" name="radioOptions" value="c">option c</input>
+              <input type="checkbox" name="radioOptions" value="d">option d</input>
+            </div>
+            <textarea id="aditionalValues"></textarea>
+            <input type="submit" id="submit"></input>
+        </form>
     <script  src="js/index.js"></script>
   </body>
 </html>
